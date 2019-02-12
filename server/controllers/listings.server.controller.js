@@ -40,23 +40,51 @@ exports.read = function(req, res) {
 exports.update = function(req, res) {
   var listing = req.listing;
 
-  /** TODO **/
   /* Replace the article's properties with the new properties found in req.body */
-  /* Save the article */
+  Listing.findByIdAndUpdate(req.params.listingId, req.body, {new: true}, (err, listing) => {
+    if (err){
+      return res.status(404).send(err);
+    }
+    else
+      return res.json(listing);
+  })
 };
 
 /* Delete a listing */
 exports.delete = function(req, res) {
   var listing = req.listing;
 
-  /** TODO **/
   /* Remove the article */
+  Listing.findByIdAndRemove(req.listing.id, function(err) {
+    if(err)
+    {
+      console.log(err);
+      res.status(404);
+      res.send(err);
+    }
+    else
+    {
+      res.status(200);
+      res.end();
+    }
+  });
 };
 
 /* Retreive all the directory listings, sorted alphabetically by listing code */
 exports.list = function(req, res) {
-  /** TODO **/
-  /* Your code here */
+  Listing.find({}).sort({code: 1}).exec(function(err, data){
+    if(err) 
+    {
+      console.log(err);
+      res.status(404);
+      res.send(err);
+    }
+    else
+    {
+      res.status(200);
+      res.json(data);
+    }
+  });
 };
 
 /* 

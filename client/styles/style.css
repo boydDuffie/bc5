@@ -1,0 +1,157 @@
+* {
+	font-family: 'Roboto', 'Arial', sans-serif;
+}
+
+body {
+	background-image: linear-gradient(to bottom left, white, #E28F41);
+}
+
+h1 {
+	text-transform: uppercase;
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 800;
+}
+
+h2 {
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
+	color: rgb(255, 255, 255);
+	font-weight: 600;
+}
+
+h3 {
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
+	color: white;
+	text-shadow: 0 0 5px #E28F41);
+	font-weight: 600;
+}
+
+h4 {
+	font-family: 'Montserrat', sans-serif;
+	color: rgb(49, 87, 146, 0.5);
+	font-weight: 400;
+}
+
+p {
+	font-family: 'Aleo', serif;
+	font-size: 1px;
+}
+
+th {
+	background-color: rgb(49, 87, 146);
+	color: white;
+}
+
+form {
+	margin-bottom: 50px;
+}
+
+#searchBar {
+  margin: 15px 10px;
+}
+
+.title-bar {
+	background-color: rgb(49, 87, 146);
+	margin-bottom: 5px;
+	padding-left: 150px;
+	padding-bottom: 10px;
+	border-bottom: 10px solid rgb(212, 133, 65);
+}
+
+.search-text {
+	font-weight: ;
+}
+
+.tableWrapper {
+  max-height: 400px;
+  overflow: auto;
+}
+
+.jumbotron {
+	background-image: linear-gradient(rgb(49, 87, 146), white);
+	color: white;
+	text-shadow: 0 0 10px rgb(49, 87, 146, 0.5);
+}
+
+.btn {
+  color: rgb(212, 133, 65);
+  border-color: rgb(212, 133, 65);
+  background-color: transparent;
+  font-weight: 600;
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
+
+.submit-button {
+	width: 50%;
+	margin-left: 25%;
+}
+
+.container {
+	background-color: white;
+}
+
+.di-h1 {
+	border: 1px solid rgb(49, 87, 146);
+	margin-top: 3px;
+	background-color: rgb(49, 87, 146, 0.25);
+	padding-left: 10px;
+	padding-right: 10px;
+	border-radius: 2px;
+}
+
+.di-h2 {
+	border-bottom: 1px solid rgb(49, 87, 146, 0.2);
+	padding-top: 5px;
+}
+
+.form-title {
+	margin-top: 50px;
+	color: #6C9AC3;
+}
+
+.form-entry {
+	padding: 7px;
+	border-radius: 2px;
+	border: 1px solid gray;
+	margin-bottom: 3px;
+}
+
+input[type=text] {
+	outline: none;
+	width: 100%;
+}
+
+input[type=text]:focus {
+	border: 2px solid rgb(212, 133, 65);
+}
+
+input[type=submit]:focus {
+	outline: none;
+	background-color: rgb(212, 133, 65, 0.25);
+}
+
+.btn:hover {
+	background-color: rgb(212, 133, 65);
+	color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
